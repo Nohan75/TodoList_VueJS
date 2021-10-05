@@ -1,8 +1,8 @@
 <template>
     <div>
         <span> {{ task.name }} </span>
-        <button @click="task.done = !task.done"> Done</button>
-        <button @click="deleteTask">Delete</button>
+        <button class="done" @click="task.done = !task.done"> Done</button>
+        <button class="delete" @click="deleteTask">Delete</button>
     </div>
 </template>
 <script>
@@ -18,6 +18,8 @@ export default {
     }
 }
 </script>
-<style>
-    
+<style scoped>
+    .done {
+        background-color: #d1d1d1;
+    }
 </style>
