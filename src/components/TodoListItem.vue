@@ -9,7 +9,6 @@
 export default {
     name: 'TodoListItem',
     props: {
-        tasks: Array,
         task: Object,
     },
     methods: {
